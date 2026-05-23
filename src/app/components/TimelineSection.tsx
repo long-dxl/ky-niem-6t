@@ -78,10 +78,10 @@ export function TimelineSection() {
         </h2>
 
         <div className="relative">
-          {/* Timeline line - desktop only */}
-          <div className="absolute left-[22px] md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-300 via-blue-400 to-cyan-300" />
+          {/* Timeline line */}
+          <div className="absolute left-[18px] md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-200 via-blue-300 to-cyan-200" />
 
-          <div className="space-y-6 md:space-y-12">
+          <div className="space-y-4 md:space-y-12">
             {timelineEvents.map((event, index) => (
               <TimelineItem
                 key={index}
