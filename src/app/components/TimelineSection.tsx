@@ -1,6 +1,8 @@
 import { TimelineItem } from "./TimelineItem";
 import { Calendar, Flower2, Plane, Camera, Music, Sparkles, Star, Heart, Eye, PartyPopper } from "lucide-react";
 
+const base = import.meta.env.BASE_URL;
+
 const timelineEvents = [
   {
     date: "23 Tháng 11, 2025",
@@ -8,7 +10,7 @@ const timelineEvents = [
     description: "Ngày mọi thứ bắt đầu. Anh đã vô cùng hồi hộp khi cầm bó hoa tỏ tình người con gái ấy, thật hạnh phúc khi em nói 'đồng ý'",
     icon: Heart,
     color: "sky",
-    image: "/dong-y.jpg",
+    image: `${base}dong-y.jpg`,
   },
   {
     date: "21 Tháng 12, 2025",
@@ -16,7 +18,7 @@ const timelineEvents = [
     description: "Được cùng em đứng cạnh hồ ở NEU ngắm bầu trời rực sáng",
     icon: PartyPopper,
     color: "cyan",
-    image: "/phao-hoa.jpg",
+    image: `${base}phao-hoa.jpg`,
   },
   {
     date: "23 Tháng 12, 2025",
@@ -24,7 +26,7 @@ const timelineEvents = [
     description: "Một bó hoa với nhiều sự lóng ngóng, xong chúng ta đã cùng đi ăn pizza siêu ngon và được chụp bức ảnh siêu cute ở kem tràng tiền",
     icon: Flower2,
     color: "blue",
-    image: "/bo-hoa.jpg",
+    image: `${base}bo-hoa.jpg`,
   },
   {
     date: "24 Tháng 12, 2025",
@@ -32,7 +34,7 @@ const timelineEvents = [
     description: "Một buổi tối siêu nhộn nhịp",
     icon: Music,
     color: "sky",
-    image: "/concert.jpg",
+    image: `${base}concert.jpg`,
   },
   {
     date: "10 Tháng 2, 2026",
@@ -40,7 +42,7 @@ const timelineEvents = [
     description: "Cùng em dạo quanh hồ Gươm trong tiết trời se lạnh và chụp những bức ảnh siêu cute ngay trước hồ",
     icon: Camera,
     color: "cyan",
-    image: ["/ho-guom-1.png", "/ho-guom-2.png"],
+    image: [`${base}ho-guom-1.png`, `${base}ho-guom-2.png`],
   },
   {
     date: "2 Tháng 3, 2026",
@@ -48,7 +50,7 @@ const timelineEvents = [
     description: "Cùng nhau đi chợ hoa vào đêm khuya hôm trước để hôm sau ra hồ bó hoa",
     icon: Flower2,
     color: "blue",
-    image: "/ho-tay.png",
+    image: `${base}ho-tay.png`,
   },
   {
     date: "17 Tháng 5, 2026",
@@ -56,7 +58,7 @@ const timelineEvents = [
     description: "Một ngày gặp lại sau bao ngày xa cách, siêu nhớ em, siêu thương em phải chịu mệt. Ở cùng em đến cuối ngày mà nuối tiếc không muốn về",
     icon: Heart,
     color: "sky",
-    image: "/quan-su.jpg",
+    image: `${base}quan-su.jpg`,
   },
   {
     date: "23 Tháng 5, 2026",
