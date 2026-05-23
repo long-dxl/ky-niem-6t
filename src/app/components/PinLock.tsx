@@ -32,8 +32,8 @@ export function PinLock({ onUnlock }: PinLockProps) {
   const handleDelete = () => setPin((p) => p.slice(0, -1));
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#eef6fd] px-4">
-      <div className="flex flex-col items-center gap-6 w-full max-w-xs">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#eef6fd] px-4 safe-area-inset">
+      <div className="flex flex-col items-center gap-5 w-full max-w-xs">
         {/* Icon */}
         <Heart className="w-16 h-16 text-sky-500 stroke-[1.5]" />
 

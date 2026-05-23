@@ -71,17 +71,17 @@ const timelineEvents = [
 
 export function TimelineSection() {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-3 md:px-4 py-10 md:py-16">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl text-center mb-16 text-gray-800">
+        <h2 className="text-2xl md:text-4xl text-center mb-8 md:mb-16 text-gray-800">
           Hành Trình Của Chúng Ta
         </h2>
 
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-300 via-blue-400 to-cyan-300 hidden md:block" />
+          {/* Timeline line - desktop only */}
+          <div className="absolute left-[22px] md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-300 via-blue-400 to-cyan-300" />
 
-          <div className="space-y-12">
+          <div className="space-y-6 md:space-y-12">
             {timelineEvents.map((event, index) => (
               <TimelineItem
                 key={index}
